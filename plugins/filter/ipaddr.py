@@ -260,6 +260,8 @@ def _ipaddr(*args, **kwargs):
             pass
         elif isinstance(data["value"], list):
             pass
+        elif isinstance(data["value"], int):
+            pass
         else:
             raise AnsibleError(
                 "Unrecognized type <{0}> for ipaddr filter <{1}>".format(
